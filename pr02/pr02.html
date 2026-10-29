@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+            background-color: #f4f8ff;
+            color: #222;
+        }
+
+        h1,
+        h2 {
+            color: #0056b3;
+        }
+
+        section {
+            margin-bottom: 30px;
+            padding: 15px;
+            border: 1px solid #cce0ff;
+            border-radius: 8px;
+            background-color: #ffffff;
+            box-shadow: 0 2px 5px rgba(0, 86, 179, 0.1);
+        }
+
+        table {
+            margin-top: 10px;
+            border-collapse: collapse;
+            width: 60%;
+        }
+
+        th,
+        td {
+            border: 1px solid #99c2ff;
+            padding: 8px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #e6f0ff;
+            color: #003366;
+        }
+
+        figure {
+            margin: 10px 0;
+            text-align: center;
+        }
+
+        figcaption {
+            color: #0056b3;
+            font-style: italic;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            color: #003366;
+            font-size: 0.9em;
+        }
+    </style>
+    <link rel="stylesheet" href="pr02.css">
+
+</head>
+
+<body>
+    <header>
+        <h1>Informació sobre codi HTML</h1>
+        <img src="./08 Principales diferencias entre HTML y HTML5.webp" alt="HTML" title="HTML" width="600"
+            height="300" />
+        <h2>Tot el que sempre he volgut saber sobre HTML</h2>
+        <nav>
+            <a href="#grup1_grup2"> Grup1 i Grup2</a>
+            <a href="#grup3"> Grup3</a>
+            <a href="#grup4"> Grup 4</a>
+        </nav>
+    </header>
+    <header>
+        <h1>Exemples d'Etiquetes HTML</h1>
+    </header>
+    <main>
+        <section id="grup1_grup2">
+            <header>
+                <h1>Grup 1 i Grup 2</h1>
+                <h2>Informació sobre llistes:</h2>
+            </header>
+            <article>
+                <!-- Comentari
+                 sobre el que vulgui-->
+                <h1>Grup 1</h1>
+                <p>Parlarem sobre: </p>
+                <ul>
+                    <li>UL</li>
+                    <li>LI</li>
+                    <li>Address</li>
+                    <li>àncores</li>
+                    <li>id</li>
+                    <li>mailto</li>
+                </ul>
+            </article>
+            <article>
+                <h2>Àncores</h2>
+                <p> Es representen amb el tag A i vinculen
+                    un text amb un altre recurs.</p>
+                <a href="https://stucom.com"> STUCOM</a>
+            </article>
+            <article>
+                <h2>Atribut Address</h2>
+                <p>Agrupa informació de contacte</p>
+                <address>
+                    <a href="mailto:cristian.catalan@stucom.com">
+                        email
+                    </a> <br />
+                    <a href="tel:+635728398">Telefon</a>
+                </address>
+                <aside>
+                    <p>Per més informació:</p>
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/address"> MDN</a>
+                </aside>
+            </article>
+            <article>
+                <header>
+                    <h1>Grup 2</h1>
+                    <h2>També parlarem de: </h2>
+                </header>
+                <ul>
+                    <li>OL</li>
+                    <li>LI</li>
+                    <li>Figure</li>
+                    <li>Figcaption</li>
+                </ul>
+                <figure>
+                    <img src="08 Principales diferencias entre HTML y HTML5.webp" alt="Logo HTML" width="200">
+                    <figcaption>Logo oficial de HTML:5</figcaption>
+                </figure>
+            </article>
+
+        </section>
+        <section id="grup3">
+            <header>
+                <h1>Grup 3</h1>
+                <h2>Informació sobre taules:</h2>
+            </header>
+            <ul>
+                <li>Table</li>
+                <li>ROW</li>
+                <li>TR, TH</li>
+                <li>colspan</li>
+                <li>rowspan</li>
+            </ul>
+            <article>
+                <h2>COLSPAN</h2>
+                <p>Especifica quantes columnes ha d'incloure
+                    una cel·la d'una taula.</p>
+            </article>
+            <article>
+                <h2>ROWSPAN</h2>
+                <p>Especifica quantes files hauria d'incloure
+                    una cel·la en una taula.</p>
+            </article>
+            <table border="1">
+                <tr>
+                    <th colspan="2">Informació HTML</th>
+                </tr>
+                <tr>
+                    <td rowspan="2">Etiquetes</td>
+                    <td>Grup 1</td>
+                </tr>
+                <tr>
+                    <td>Grup 2</td>
+                </tr>
+            </table>
+        </section>
+    </main>
+    <section id="grup4">
+        <header>
+            <h1>Grup 4</h1>
+            <h2>Altres marques:</h2>
+        </header>
+        <ul>
+            <li>Time</li>
+            <li>Strong</li>
+            <li>Details</li>
+            <li>Summary</li>
+        </ul>
+        <p>Última actualització: <time datetime="2026-10-05">5 d'Octubre de 2026</time></p>
+        <p>HTML és un llenguatge <strong>fonamental</strong> per crear pàgines web..</p>
+
+        <details>
+            <summary>Veure més informació</summary>
+            <p>HTML significa HyperText Markup Language i serveix per estructurar contingut web.</p>
+        </details>
+    </section>
+    <footer>
+        <!--Aquí la informació
+        sobre la página-->
+    </footer>
+    <footer>
+        <p>Document creat per Saba Gulikashvili - 2026</p>
+    </footer>
+</body>
+
+</html>
